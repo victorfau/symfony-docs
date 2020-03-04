@@ -434,8 +434,7 @@ by adding JOINs.
         $category = $product->getCategory();
 
         // prints "Proxies\AppEntityCategoryProxy"
-        dump(get_class($category));
-        die();
+        dd(get_class($category));
 
     This proxy object extends the true ``Category`` object, and looks and
     acts exactly like it. The difference is that, by using a proxy object,
